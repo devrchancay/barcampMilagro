@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo barcamp</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+	 <link rel="stylesheet" href="styles/animate.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 <style>
+		.hide{
+			display: none;
+		}
+	 </style>
+</head>
+<body>
+	  <nav>
+	    <div class="nav-wrapper  light-blue darken-4">
+	      <a href="#" class="brand-logo center">Barcamp + Nodejs <3 </a>
+	    </div>
+	  </nav>
+	  <br>
+	  <div class="container">
+	    <div class="input-field col s6" id="insertUser">
+	    	<div class="col s6">
+	            <input id="email" type="text">
+	            <label for="email" class="">Nombre</label>
+	    	</div>
+	    	<div class="col s6">
+            	<button class=" light-blue darken-2 waves-effect waves-light btn" id="enter">Entrar</button>
+            </div>
+         </div>
+	  </div>
+	  <div class="container">
+	  	<ul class="collection">
+		    
+		</ul>
+		<div class="col s6 hide" id="comment">
+			<input type="text" placeholder="Escriba su comentario"/>
+		</div>
+	  </div>
+	  <script src="/socket.io/socket.io.js"></script>
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+	<script src="scripts/handlebars.min.js"></script>
+	<script src="scripts/main.js"></script>
+
+	<script id="entry-user" type="text/x-handlebars-template">
+    	<li class="collection-item avatar animated fadeIn">
+		      <img src="{{avatar}}" alt="" id="avatar" class="circle">
+		      <span class="title"><strong>{{user}}</strong></span>
+		      <p> {{ message }} <a>
+		</li>
+	</script>
+</body>
+</html>

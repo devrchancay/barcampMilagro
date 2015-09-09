@@ -1,0 +1,16 @@
+{
+  "name": "barcamp",
+  "version": "1.0.0",
+  "description": "Ejercicio de nodejs para el barcamp",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "author": "Ramón Chancay <ramon.chancay at gmail dot com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "socket.io": "^1.3.6"
+  }
+}
